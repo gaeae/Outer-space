@@ -1,0 +1,17 @@
+﻿  Framework.cpp
+c:\users\nikog\documents\projekte\games\outer-space\outer-space\main\loadresources.h(57): warning C4091: 'static ': ignored on left of 'LoadResources' when no variable is declared
+c:\users\nikog\documents\projekte\games\outer-space\outer-space\main\framework.cpp(7): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  Outer-space.vcxproj -> C:\Users\nikog\Documents\Projekte\Games\Outer-space\x64\Debug\Outer-space.exe
+  Copy SFML dependencies to target
+  C:\Users\nikog\Documents\Projekte\Games\Outer-space\..\..\Resources\Dependencies\SFML\SFML-2.5.1\bin\openal32.dll
+  C:\Users\nikog\Documents\Projekte\Games\Outer-space\..\..\Resources\Dependencies\SFML\SFML-2.5.1\bin\sfml-audio-2.dll
+  C:\Users\nikog\Documents\Projekte\Games\Outer-space\..\..\Resources\Dependencies\SFML\SFML-2.5.1\bin\sfml-audio-d-2.dll
+  C:\Users\nikog\Documents\Projekte\Games\Outer-space\..\..\Resources\Dependencies\SFML\SFML-2.5.1\bin\sfml-graphics-2.dll
+  C:\Users\nikog\Documents\Projekte\Games\Outer-space\..\..\Resources\Dependencies\SFML\SFML-2.5.1\bin\sfml-graphics-d-2.dll
+  C:\Users\nikog\Documents\Projekte\Games\Outer-space\..\..\Resources\Dependencies\SFML\SFML-2.5.1\bin\sfml-network-2.dll
+  C:\Users\nikog\Documents\Projekte\Games\Outer-space\..\..\Resources\Dependencies\SFML\SFML-2.5.1\bin\sfml-network-d-2.dll
+  C:\Users\nikog\Documents\Projekte\Games\Outer-space\..\..\Resources\Dependencies\SFML\SFML-2.5.1\bin\sfml-system-2.dll
+  C:\Users\nikog\Documents\Projekte\Games\Outer-space\..\..\Resources\Dependencies\SFML\SFML-2.5.1\bin\sfml-system-d-2.dll
+  C:\Users\nikog\Documents\Projekte\Games\Outer-space\..\..\Resources\Dependencies\SFML\SFML-2.5.1\bin\sfml-window-2.dll
+  C:\Users\nikog\Documents\Projekte\Games\Outer-space\..\..\Resources\Dependencies\SFML\SFML-2.5.1\bin\sfml-window-d-2.dll
+  11 Datei(en) kopiert

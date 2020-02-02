@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\UI">
+      <UniqueIdentifier>{51bd9c69-c71f-484f-b741-593004aca0ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Control">
+      <UniqueIdentifier>{fc9af433-0ada-49ff-831f-a3f366eb6e5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Control\Managers">
+      <UniqueIdentifier>{77b9783c-df35-4d23-8dde-5b16fc790b05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Control\States">
+      <UniqueIdentifier>{9ba2feed-24b2-46d9-bb85-cb76047a5255}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Models">
+      <UniqueIdentifier>{135a2dcb-26fe-483f-a19d-86ff460cbef5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Models">
+      <UniqueIdentifier>{f27ae0ee-f11d-4cb5-9aed-24728bca8dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Control">
+      <UniqueIdentifier>{6850d4cd-9bb6-48be-ac81-98af65f2d435}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI">
+      <UniqueIdentifier>{1554677a-341d-4a54-8b5d-5c2e7198c13e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Control\Managers">
+      <UniqueIdentifier>{fe485d2d-1fe5-4174-a803-68cb6c706f20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Control\States">
+      <UniqueIdentifier>{893492fd-3843-42a5-9a69-65d353858271}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\Anmation">
+      <UniqueIdentifier>{4d26749d-1339-46b7-9eae-6532902b1db1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\UI\Sound">
+      <UniqueIdentifier>{0b00c1b0-6616-4ca2-b2ac-556fe5a46405}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\Sound">
+      <UniqueIdentifier>{830d5e39-d1b2-45cf-8ffe-0c674563dcb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UI\Animation">
+      <UniqueIdentifier>{e96f0605-2851-4630-b529-f9d011c662e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Images">
+      <UniqueIdentifier>{6e1ae633-1d5a-4f1b-88ae-dd6825c13186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Sounds">
+      <UniqueIdentifier>{53d6a3d3-7e6d-4276-a9ae-5142e28d6a58}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Fonts">
+      <UniqueIdentifier>{9a306236-167a-4e4f-8117-7c0630140329}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UI\RenderWindow.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Texturen.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Toggle.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\Managers\AsteroidManager.h">
+      <Filter>Header Files\Control\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\Managers\PlayerManager.h">
+      <Filter>Header Files\Control\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\States\StateGame.h">
+      <Filter>Header Files\Control\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\States\StateMenu.h">
+      <Filter>Header Files\Control\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\States\StateOption.h">
+      <Filter>Header Files\Control\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\States\StatePlay.h">
+      <Filter>Header Files\Control\States</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Asteroid.h">
+      <Filter>Header Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Enemy.h">
+      <Filter>Header Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Player.h">
+      <Filter>Header Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Shot.h">
+      <Filter>Header Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="Models\Weapon.h">
+      <Filter>Header Files\Models</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Animation\Collision.h">
+      <Filter>Header Files\UI\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Animation\CollisionSystem.h">
+      <Filter>Header Files\UI\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Sound\Music.h">
+      <Filter>Header Files\UI\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Sound\Sound.h">
+      <Filter>Header Files\UI\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\Framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Button.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="UI\Gui.h">
+      <Filter>Header Files\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Main\LoadResources.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Models\Asteroid.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\Enemy.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\Player.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\Shot.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Models\Weapon.cpp">
+      <Filter>Source Files\Models</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\Managers\AsteroidManager.cpp">
+      <Filter>Source Files\Control\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\Managers\PlayerManager.cpp">
+      <Filter>Source Files\Control\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\States\StateMenu.cpp">
+      <Filter>Source Files\Control\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\States\StateOption.cpp">
+      <Filter>Source Files\Control\States</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\States\StatePlay.cpp">
+      <Filter>Source Files\Control\States</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Toggle.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Sound\Music.cpp">
+      <Filter>Source Files\UI\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Animation\Collision.cpp">
+      <Filter>Source Files\UI\Anmation</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Animation\CollisionSystem.cpp">
+      <Filter>Source Files\UI\Anmation</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main\Framework.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UI\Button.cpp">
+      <Filter>Source Files\UI</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\Images\asteroid.large.jpg">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\asteroid_new.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\asteroid_new_target.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\background.jpg">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\button.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\enemy.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\explosion1.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\explosion2.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\health.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\mouse.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\mouse_hyper.jpeg">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\mouse2.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\mousestinke.jpg">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\player.jpg">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\player_raw.jpg">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\player27.jpg">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\shield.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\shield_new.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+    <Image Include="..\Resources\Images\shot.png">
+      <Filter>Resource Files\Images</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\Fonts\arial.ttf">
+      <Filter>Resource Files\Fonts</Filter>
+    </Font>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\Resources\Audios\exit.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="..\Resources\Audios\explosion.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+    <Media Include="..\Resources\Audios\start.wav">
+      <Filter>Resource Files\Sounds</Filter>
+    </Media>
+  </ItemGroup>
+</Project>

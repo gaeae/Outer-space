@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{0EFFE44E-C932-4185-8515-8C69F999D161}</ProjectGuid>
+    <RootNamespace>Outerspace</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <TargetName>$(ProjectName)\$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\nikog\Documents\Projekte\Resources\Dependencies\SFML\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <AdditionalDependencies>sfml-graphics-d.lib;sfml-window-d.lib;sfml-system-d.lib;sfml-audio-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\nikog\Documents\Projekte\Resources\Dependencies\SFML\SFML-2.5.1\lib;</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>@ECHO Copy SFML dependencies to target
+xcopy "$(SolutionDir)..\..\Resources\Dependencies\SFML\SFML-2.5.1\bin\*"  "$(TargetDir)" /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Users\nikog\Documents\Projekte\Resources\Dependencies\SFML\SFML-2.5.1\include</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>sfml-graphics.lib;sfml-system.lib;sfml-window.lib;sfml-audio.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\nikog\Documents\Projekte\Resources\Dependencies\SFML\SFML-2.5.1\lib;</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Control\Managers\AsteroidManager.h" />
+    <ClInclude Include="Control\Managers\PlayerManager.h" />
+    <ClInclude Include="Control\States\StateGame.h" />
+    <ClInclude Include="Control\States\StateMenu.h" />
+    <ClInclude Include="Control\States\StateOption.h" />
+    <ClInclude Include="Control\States\StatePlay.h" />
+    <ClInclude Include="Main\Framework.h" />
+    <ClInclude Include="Main\LoadResources.h" />
+    <ClInclude Include="Models\Asteroid.h" />
+    <ClInclude Include="Models\Enemy.h" />
+    <ClInclude Include="Models\Player.h" />
+    <ClInclude Include="Models\Shot.h" />
+    <ClInclude Include="Models\Weapon.h" />
+    <ClInclude Include="UI\Animation\Collision.h" />
+    <ClInclude Include="UI\Animation\CollisionSystem.h" />
+    <ClInclude Include="UI\Button.h" />
+    <ClInclude Include="UI\Gui.h" />
+    <ClInclude Include="UI\RenderWindow.h" />
+    <ClInclude Include="UI\Sound\Music.h" />
+    <ClInclude Include="UI\Sound\Sound.h" />
+    <ClInclude Include="UI\Texturen.h" />
+    <ClInclude Include="UI\Toggle.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Control\Managers\AsteroidManager.cpp" />
+    <ClCompile Include="Control\Managers\PlayerManager.cpp" />
+    <ClCompile Include="Control\States\StateMenu.cpp" />
+    <ClCompile Include="Control\States\StateOption.cpp" />
+    <ClCompile Include="Control\States\StatePlay.cpp" />
+    <ClCompile Include="Main\Framework.cpp" />
+    <ClCompile Include="Main\main.cpp" />
+    <ClCompile Include="Models\Asteroid.cpp" />
+    <ClCompile Include="Models\Enemy.cpp" />
+    <ClCompile Include="Models\Player.cpp" />
+    <ClCompile Include="Models\Shot.cpp" />
+    <ClCompile Include="Models\Weapon.cpp" />
+    <ClCompile Include="UI\Animation\Collision.cpp" />
+    <ClCompile Include="UI\Animation\CollisionSystem.cpp" />
+    <ClCompile Include="UI\Button.cpp" />
+    <ClCompile Include="UI\Sound\Music.cpp" />
+    <ClCompile Include="UI\Toggle.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\Images\asteroid.large.jpg" />
+    <Image Include="..\Resources\Images\asteroid_new.png" />
+    <Image Include="..\Resources\Images\asteroid_new_target.png" />
+    <Image Include="..\Resources\Images\background.jpg" />
+    <Image Include="..\Resources\Images\button.png" />
+    <Image Include="..\Resources\Images\enemy.png" />
+    <Image Include="..\Resources\Images\explosion1.png" />
+    <Image Include="..\Resources\Images\explosion2.png" />
+    <Image Include="..\Resources\Images\health.png" />
+    <Image Include="..\Resources\Images\mouse.png" />
+    <Image Include="..\Resources\Images\mouse2.png" />
+    <Image Include="..\Resources\Images\mousestinke.jpg" />
+    <Image Include="..\Resources\Images\mouse_hyper.jpeg" />
+    <Image Include="..\Resources\Images\player.jpg" />
+    <Image Include="..\Resources\Images\player27.jpg" />
+    <Image Include="..\Resources\Images\player_raw.jpg" />
+    <Image Include="..\Resources\Images\shield.png" />
+    <Image Include="..\Resources\Images\shield_new.png" />
+    <Image Include="..\Resources\Images\shot.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Font Include="..\Resources\Fonts\arial.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="..\Resources\Audios\exit.wav" />
+    <Media Include="..\Resources\Audios\explosion.wav" />
+    <Media Include="..\Resources\Audios\start.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
